@@ -1,0 +1,90 @@
+libast
+------------------------------------------
+LibAST is the Library of Assorted Spiffy Things.  It contains many
+spiffy things, and it is a library.  Thus, the ever-so-creative name.
+LibAST has been previously known as libmej, the Eterm helper library
+which nobody really understood and certainly never used.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libimlib2-1.4.2-1
+  libpcre0-7.8-1
+  libX11_6-1.1.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.eterm.org/
+
+Canonical download:
+  http://www.eterm.org/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libast-0.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libast-0.7-X.cygport all
+
+This will create:
+  /usr/src/libast-0.7-X-src.tar.bz2
+  /usr/src/libast-devel-0.7-X.tar.bz2
+  /usr/src/libast2-0.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libast2)
+  /usr/bin/cygast-2.dll
+  /usr/share/doc/libast-0.7/ChangeLog
+  /usr/share/doc/libast-0.7/README
+
+(libast-devel)
+  /usr/bin/libast-config
+  /usr/include/libast.h
+  /usr/include/libast/array.h
+  /usr/include/libast/avl_tree.h
+  /usr/include/libast/dlinked_list.h
+  /usr/include/libast/iterator_if.h
+  /usr/include/libast/linked_list.h
+  /usr/include/libast/list_if.h
+  /usr/include/libast/map_if.h
+  /usr/include/libast/mbuff.h
+  /usr/include/libast/obj.h
+  /usr/include/libast/objpair.h
+  /usr/include/libast/regexp.h
+  /usr/include/libast/socket.h
+  /usr/include/libast/str.h
+  /usr/include/libast/sysdefs.h
+  /usr/include/libast/tok.h
+  /usr/include/libast/types.h
+  /usr/include/libast/url.h
+  /usr/include/libast/vector_if.h
+  /usr/lib/libast.a
+  /usr/lib/libast.dll.a
+  /usr/lib/libast.la
+  /usr/share/aclocal/libast.m4
+
+------------------
+
+Port Notes:
+
+----- version 0.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

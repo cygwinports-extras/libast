@@ -1,0 +1,17 @@
+DESCRIPTION="Eterm helper library"
+HOMEPAGE="http://www.eterm.org/"
+SRC_URI="http://www.eterm.org/download/${P}.tar.gz"
+PATCH_URI="0.7-no-undefined.patch"
+
+PKG_NAMES="${PN} ${PN}2 ${PN}-devel"
+libast2_CONTENTS="usr/bin/*-2.dll usr/share/doc/"
+libast_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/ usr/share/aclocal/"
+
+DIFF_EXCLUDES="sysdefs.h"
+
+ACLOCAL_FLAGS="-I ."
+CYGCONF_ARGS="
+	--enable-mmx
+	--with-imlib
+	--with-regexp=pcre
+"

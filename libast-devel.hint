@@ -1,0 +1,9 @@
+category: X11
+requires: cygwin libast2 libimlib2-devel pcre-devel libX11-devel
+external-source: libast
+sdesc: "Eterm helper library (development)"
+ldesc: "LibAST is the Library of Assorted Spiffy Things.  It contains 
+many spiffy things, and it is a library.  Thus, the ever-so-creative 
+name. LibAST has been previously known as libmej, the Eterm helper 
+library which nobody really understood and certainly never used.  My 
+current"
