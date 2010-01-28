@@ -1,5 +1,5 @@
 category: X11
-requires: libimlib2 libpcre0 libX11_6
+requires: libgcc1 libImlib2_1 libpcre0 libX11_6
 external-source: libast
 sdesc: "Eterm helper library (runtime)"
 ldesc: "LibAST is the Library of Assorted Spiffy Things.  It contains 

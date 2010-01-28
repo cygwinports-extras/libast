@@ -1,5 +1,5 @@
 category: X11
-requires: libast2 libimlib2-devel pcre-devel libX11-devel
+requires: libast2 libImlib2-devel libpcre-devel libX11-devel
 external-source: libast
 sdesc: "Eterm helper library (development)"
 ldesc: "LibAST is the Library of Assorted Spiffy Things.  It contains 
