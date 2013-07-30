@@ -1,0 +1,25 @@
+NAME="libast"
+VERSION=0.7
+RELEASE=3
+CATEGORY="Libs"
+SUMMARY="Eterm helper library"
+DESCRIPTION="LibAST is the Library of Assorted Spiffy Things.  It contains
+many spiffy things, and it is a library.  Thus, the ever-so-creative name.
+LibAST has been previously known as libmej, the Eterm helper library which
+nobody really understood and certainly never used."
+HOMEPAGE="http://www.eterm.org/"
+SRC_URI="http://www.eterm.org/download/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.7-no-undefined.patch"
+
+PKG_NAMES="${NAME}2 ${NAME}-devel"
+libast2_CONTENTS="usr/bin/*-2.dll usr/share/doc/"
+libast_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/ usr/share/aclocal/"
+
+DIFF_EXCLUDES="sysdefs.h"
+
+ACLOCAL_FLAGS="-I ."
+CYGCONF_ARGS="
+	${ARCH_i686+--enable-mmx}
+	--with-imlib
+	--with-regexp=pcre
+"
