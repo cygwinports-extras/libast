@@ -15,7 +15,7 @@ PKG_NAMES="${NAME}2 ${NAME}-devel"
 libast2_CONTENTS="usr/bin/*-2.dll usr/share/doc/"
 libast_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/ usr/share/aclocal/"
 
-DIFF_EXCLUDES="sysdefs.h"
+DIFF_EXCLUDES="sysdefs.h types.h"
 
 ACLOCAL_FLAGS="-I ."
 CYGCONF_ARGS="
